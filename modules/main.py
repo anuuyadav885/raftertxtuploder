@@ -30,21 +30,21 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("𝙃𝙄𝙄 ┈━═𝙈𝙮 𝙁𝙧𝙞𝙚𝙣𝙙═━┈😎\n\n I Am A Bot For Download Links From Your .TXT File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me Hidden Command And Then Follow Few Steps..r@j❤️")
+    editable = await m.reply_text("HELLO Baby🍷,\nI AM TXT DOWNLOADER\n\n BOT MADE BY:- Tapori 2.0 😇.")
 
 
-@bot.on_message(filters.command("stop"))
+@bot.on_message(filters.command("rukja"))
 async def restart_handler(_, m):
-    await m.reply_text("Stopped🚦", True)
+    await m.reply_text("**ruk gaya**😜😜", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 @bot.on_message(filters.command(["love"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('𝙏𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙖 𝙏𝙓𝙏 𝙛𝙞𝙡𝙚 𝙨𝙚𝙣𝙙 𝙝𝙚𝙧𝙚 ⚡️')
+    editable = await m.reply_text('**𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
-    await bot.send_document(-1002053823532, x)
+    await bot.send_document(-1002095173433, x)
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
 
@@ -66,18 +66,18 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"𝙏𝙊𝙏𝘼𝙇 𝙇𝙄𝙉𝙆'𝙎 𝘼𝙍𝙀 𝙁𝙊𝙐𝙉𝘿🔗🔗 {len(links)}\n\n𝙎𝙚𝙣𝙙 𝙛𝙧𝙤𝙢 𝙬𝙝𝙚𝙧𝙚 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙞𝙣𝙞𝙩𝙞𝙖𝙡 𝙞𝙨 1")
+    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("Now Please Send Me Your Batch Name")
+    await editable.edit("**𝕊ᴇɴᴅ Me Your Batch Name**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
   
   
-    await editable.edit("𝙀𝙉𝙏𝙀𝙍 𝙍𝙀𝙎𝙊𝙇𝙐𝙏𝙄𝙊𝙉📸\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n\n144,240,360,480,720,1080 please choose quality")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -101,7 +101,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file\n ex: @sccwaleyarr")
+    await editable.edit("𝔼ɴᴛᴇʀ Your Name or send")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -111,14 +111,14 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/aaee4cae31bb9c48621e2.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the **Thumb url**\nEg : ``````\n\nor Send `no`")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
     await editable.delete()
 
     thumb = input6.text
-    if thumb.startswith("http://") or thumb.startswith("https://"):
+    if thumb.startswith("http://") or thumb.startswith("https://telegra.ph/file/32f106d692ff33700c464.jpg"):
         getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
         thumb = "thumb.jpg"
     else:
@@ -162,9 +162,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                
-                cc = f'[📽️] 𝙑𝙞𝙙_𝙄𝘿 ➤ {str(count).zfill(3)}.\n𝙏𝙄𝙏𝙇𝙀 ➤ {𝗻𝗮𝗺𝗲𝟭}.mkv\n𝘽𝘼𝙏𝘾𝙃 ➤ {raw_text0}\n\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤ {MR}'
-                cc1 = f'[📁] 𝙋𝙙𝙛_𝙄𝘿 ➤ {str(count).zfill(3)}.\n𝙏𝙄𝙏𝙇𝙀 ➤ {𝗻𝗮𝗺𝗲𝟭}.pdf \n𝘽𝘼𝙏𝘾𝙃 ➤ {raw_text0}\n\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤ {MR}'
+                cc = f'**[🎬]𝐕𝐈𝐃_𝐈𝐃 [🤖] ➤** {str(count).zfill(3)}.\n **[📝]𝐓𝐈𝐓𝐋𝐄  ➤** {𝗻𝗮𝗺𝗲𝟭} ({res})𓆩🖤𓆪Tapori 🥷.mkv\n\n **[♦]𝐁𝐀𝐓𝐂𝐇 ➤**{raw_text0}\n\n**𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤ {MR}**\n@taporibot_bot**'
+                cc1 = f'**[📕]𝐕𝐈𝐃_𝐈𝐃 [🤖] ➤** {str(count).zfill(3)}.\n **[📝]𝐓𝐈𝐓𝐋𝐄  ➤** {𝗻𝗮𝗺𝗲𝟭}𓆩🖤𓆪Tapori 🥷.pdf \n\n **[♦]𝐁𝐀𝐓𝐂𝐇 ➤**{raw_text0}\n\n**𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤ {MR}**\n@taporibot_bot**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -190,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"⬇️𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂⬇️\n\n📝Name » {name}\n❄Quality » {raw_text2}\n\n🔗URL » {url}"
+                    Show = f"⬇️𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂⬇️ » [🤖]\n\n📑𝐍𝐀𝐌𝐄 » {name}\n🍀𝐐𝐔𝐀𝐋𝐈𝐓𝐘 » {raw_text2}\n\n🔗𝐔𝐑𝐋 » {url}"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -207,7 +206,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done✅")
+    await m.reply_text("🔰Batch Complete Successful✅")
 
 
 bot.run()
